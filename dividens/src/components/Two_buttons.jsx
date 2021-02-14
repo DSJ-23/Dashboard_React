@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 
-const Two_buttons = () => {
+const Two = () => {
 
     const[count, setCount] = useState(0);
 
@@ -19,4 +19,4 @@ const Two_buttons = () => {
     )
 }
 
-export default Two_buttons;
+export default Two;

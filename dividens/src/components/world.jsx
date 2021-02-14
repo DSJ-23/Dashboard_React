@@ -1,19 +1,13 @@
-import React, {useState} from 'react';
-import Button from 'react-bootstrap/Button';
+import React from 'react';
+import Two from './Two_buttons';
 
 const World = () => {
 
-    const[count, setCount] = useState(0);
-
-    let reset = () => {
-        setCount(0);
-    }
 
     return (
         <div>
-            <Button onClick={() => reset()}>Reset</Button>
-            <Button style={{marginLeft: 4}} onClick={() => setCount(count => count + 1)} variant="warning">Add</Button>
-            <p>{count}</p>
+            <div><Two></Two></div>
+            <div><Two></Two></div>
         </div>
     )
 }
