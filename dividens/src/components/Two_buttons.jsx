@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 
-const World = () => {
+const Two_buttons = () => {
 
     const[count, setCount] = useState(0);
 
     let reset = () => {
         setCount(0);
     }
+
 
     return (
         <div>
@@ -18,4 +19,4 @@ const World = () => {
     )
 }
 
-export default World
+export default Two_buttons;
