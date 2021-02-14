@@ -1,5 +1,6 @@
 import './App.css';
 import World from './components/world';
+import Error from './components/error';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function App() {
@@ -7,11 +8,10 @@ function App() {
     <Router>
     <div className="App">
       <Switch>
-        <Route path="/hello" component={World}></Route>
+        <Route path="/hello" exact component={World}></Route>
+        <Route path="*" component={Error}></Route>
       </Switch>
-      <p>hello</p>
     </div>
-
     </Router>
   );
 }
