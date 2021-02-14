@@ -1,12 +1,18 @@
 import './App.css';
 import World from './components/world';
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <World></World>
+      <Switch>
+        <Route path="/hello" component={World}></Route>
+      </Switch>
+      <p>hello</p>
     </div>
+
+    </Router>
   );
 }
 
