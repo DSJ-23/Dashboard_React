@@ -1,6 +1,6 @@
 import React from 'react'
 
-const world = () => {
+const World = () => {
     return (
         <div>
             <p>hello world</p>
@@ -8,4 +8,4 @@ const world = () => {
     )
 }
 
-export default world
+export default World
