@@ -9,7 +9,6 @@ const Two = () => {
         setCount(0);
     }
 
-
     return (
         <div>
             <Button onClick={() => reset()}>Reset</Button>

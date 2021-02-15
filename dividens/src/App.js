@@ -7,7 +7,7 @@ import {CountContext} from './components/CountContext';
 
 function App() {
 
-  let count = 0;
+  let count = 2;
 
   return (
     <div className="App App-header">
