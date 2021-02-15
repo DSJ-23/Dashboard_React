@@ -1,19 +1,16 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
 import Button from 'react-bootstrap/Button';
+import {CountContext} from './CountContext';
 
 const Two = () => {
 
-    const[count, setCount] = useState(0);
-
-    let reset = () => {
-        setCount(0);
-    }
+    const {value, setValue} = useContext(CountContext);
 
     return (
         <div>
-            <Button onClick={() => reset()}>Reset</Button>
-            <Button style={{marginLeft: 4}} onClick={() => setCount(count => count + 1)} variant="warning">Add</Button>
-            <p>{count}</p>
+            <Button onClick={() => setValue(0)}>Reset</Button>
+            <Button style={{marginLeft: 4}} onClick={() => setValue(count => count + 1)} variant="warning">Add</Button>
+            <p>{value}</p>
         </div>
     )
 }
